@@ -1,7 +1,5 @@
 import { useUser, SignInButton, SignOutButton } from '@clerk/nextjs';
 import Head from 'next/head';
-import { api } from '~/utils/api';
-
 import ThemeToggler from '~/components/themeToggler';
 
 export default function Home() {
