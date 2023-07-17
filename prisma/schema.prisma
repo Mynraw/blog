@@ -11,8 +11,10 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
-model Example {
+model Post {
     id        String   @id @default(auto()) @map("_id") @db.ObjectId
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
+    content   String
+    isDeleted Boolean
 }
