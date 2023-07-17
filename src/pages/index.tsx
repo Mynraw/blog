@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create T3 App</title>
+        <title>Arya Trying to Code</title>
         <meta name="description" content="Blog by Mynraw" />
         <meta name="author" content="Arya Açıkgöz" />
         <link rel="icon" href="/favicon.ico" />
