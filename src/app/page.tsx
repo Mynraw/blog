@@ -1,10 +1,8 @@
-import { useUser, SignInButton, SignOutButton } from '@clerk/nextjs';
 import Head from 'next/head';
-import ThemeToggler from '~/components/themeToggler';
+import ThemeToggler from '~/components/theme-toggler';
 
 export default function Home() {
-  const { isSignedIn } = useUser();
-
+  
   return (
     <>
       <Head>
@@ -15,7 +13,7 @@ export default function Home() {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center">
         <div className="rounded-xl bg-purple-800 px-3 py-2">
-          {isSignedIn ? <SignOutButton /> : <SignInButton />}
+          asd
         </div>
         <ThemeToggler />
       </main>
