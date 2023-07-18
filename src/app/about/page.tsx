@@ -1,8 +1,7 @@
 import { type FC } from 'react'
+import { type PageProps } from '.next/types/app/layout'
 
-interface pageProps {id: string}
-
-const Page: FC<pageProps> = ({}) => {
+const Page: FC<PageProps> = () => {
     return <div>works?</div>
 }
 
