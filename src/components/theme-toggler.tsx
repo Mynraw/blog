@@ -1,8 +1,9 @@
-'use client'
+'use client';
 
 import { useTheme } from 'next-themes';
+import type { FC } from 'react';
 
-const ThemeToggler = () => {
+const ThemeToggler: FC = () => {
   const { theme, setTheme } = useTheme();
 
   const handleTheme = () => {
