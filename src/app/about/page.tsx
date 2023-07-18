@@ -1,8 +1,7 @@
-import { type FC } from 'react'
-import { type PageProps } from '.next/types/app/layout'
+import { type FC } from 'react';
 
-const Page: FC<PageProps> = () => {
-    return <div>works?</div>
-}
+const About: FC = () => {
+  return <div>works?</div>;
+};
 
-export default Page;
+export default About;
