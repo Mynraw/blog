@@ -3,6 +3,7 @@ import { ClerkProvider } from '@clerk/nextjs';
 import Layout from '~/components/layout';
 import { api } from '~/utils/api';
 import '~/styles/globals.css';
+import '~/styles/twemoji.css';
 
 const MyBlog: AppType = ({ Component, pageProps }) => {
   return (

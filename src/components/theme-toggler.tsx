@@ -1,8 +1,12 @@
+import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import type { FC } from 'react';
 
 const ThemeToggler: FC = () => {
+  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+
+  useEffect(() => setMounted(true), []);
 
   const handleTheme = () => {
     if (theme === 'dark') {
@@ -18,7 +22,7 @@ const ThemeToggler: FC = () => {
       <input
         type="checkbox"
         id="theme-toggle"
-        checked={theme === 'dark' ? true : false}
+        checked={theme === 'dark' && mounted ? false : true}
         onChange={handleTheme}
       />
       <label htmlFor="theme-toggle"></label>

@@ -6,11 +6,6 @@
   transition:
     background-color 0.2s ease-in-out,
     color 0.2s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
   color: #000;
   user-select: none;
 }
@@ -23,8 +18,8 @@
   content: '';
   display: inline-block;
   cursor: pointer;
-  height: 25px;
-  width: 25px;
+  height: 24px;
+  width: 24px;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
@@ -35,5 +30,5 @@
 
 #theme-toggle:checked + label {
   background-color: transparent;
-  box-shadow: inset -8px -6px 1px 1px #fff;
+  box-shadow: inset -6px -5px 1px 1px #121212;
 }
