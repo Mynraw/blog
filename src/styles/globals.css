@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 .toggle-wrapper {
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
