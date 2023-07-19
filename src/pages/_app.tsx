@@ -1,17 +1,17 @@
-import { ThemeProvider } from 'next-themes';
-import { ClerkProvider } from '@clerk/nextjs';
 import type { AppType } from 'next/app';
+import { ClerkProvider } from '@clerk/nextjs';
+import Layout from '~/components/layout';
 import { api } from '~/utils/api';
 import '~/styles/globals.css';
 
-const MyApp: AppType = ({ Component, pageProps }) => {
+const MyBlog: AppType = ({ Component, pageProps }) => {
   return (
     <ClerkProvider {...pageProps}>
-      <ThemeProvider attribute="class" enableSystem={false}>
+      <Layout>
         <Component {...pageProps} />
-      </ThemeProvider>
+      </Layout>
     </ClerkProvider>
   );
 };
 
-export default api.withTRPC(MyApp);
+export default api.withTRPC(MyBlog);
