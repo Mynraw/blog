@@ -1,6 +1,5 @@
+import defaultTheme from 'tailwindcss/defaultTheme'
 /** @type {import('tailwindcss').Config} */
-
-// import defaultTheme from 'tailwindcss/defaultTheme'
 import { type Config } from "tailwindcss";
 
 export default {
@@ -8,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter']
+        sans: ['Inter', ...defaultTheme.fontFamily.sans]
       }
     },
   },
