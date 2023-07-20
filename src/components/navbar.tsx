@@ -5,8 +5,8 @@ import ThemeToggler from './theme-toggler';
 
 const Navbar: FC = () => {
   return (
-    <header className="fixed w-full py-5">
-      <div className="container mx-auto flex items-center justify-between">
+    <header className="w-full py-5">
+      <div className="container mx-auto flex max-w-5xl items-center justify-between">
         <div>
           <Link href={'/'}>
             <Image
@@ -21,13 +21,13 @@ const Navbar: FC = () => {
         <nav>
           <ul className="flex items-center gap-x-2">
             <li>
-              <Link href={'/'}>Home</Link>
-            </li>
-            <li>
               <Link href={'/post'}>Post</Link>
             </li>
             <li>
               <Link href={'/about'}>About</Link>
+            </li>
+            <li>
+              <Link href={'/resume'}>Resume</Link>
             </li>
             <li>
               <ThemeToggler />

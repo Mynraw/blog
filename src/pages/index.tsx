@@ -1,5 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Greeting from '~/components/greeting';
+import PersonalCard from '~/components/personal-card';
 
 const Home: NextPage = () => {
   return (
@@ -10,9 +12,9 @@ const Home: NextPage = () => {
         <meta name="author" content="Arya Açıkgöz" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-center">
-        <span> hi </span>
-        <i className="twa-5x twa-waving-hand" />
+      <main className="mx-auto min-h-screen max-w-5xl">
+        <Greeting />
+        <PersonalCard />
       </main>
     </>
   );
