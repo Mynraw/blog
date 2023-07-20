@@ -5,7 +5,7 @@ import ThemeToggler from './theme-toggler';
 
 const Navbar: FC = () => {
   return (
-    <header className="w-full py-5">
+    <header className="sticky top-0 w-full py-5 backdrop-blur supports-[backdrop-blur]:bg-white/95">
       <div className="container mx-auto flex max-w-5xl items-center justify-between">
         <div>
           <Link href={'/'}>

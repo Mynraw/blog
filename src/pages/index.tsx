@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <meta name="author" content="Arya Açıkgöz" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="mx-auto min-h-screen max-w-5xl">
+      <main className="mx-auto mt-16 flex min-h-screen max-w-5xl items-start">
         <Greeting />
         <PersonalCard />
       </main>

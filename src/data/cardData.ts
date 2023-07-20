@@ -2,10 +2,10 @@ import type { CardDataProps } from "~/types/data"
 
 export const cardData: CardDataProps = {
     name: 'Arya Açıkgöz',
-    shorter: 'Geliştirici | Araştırmacı',
+    shorter: 'Developer | Learner',
     location: 'Ankara, Turkey',
     title: 'FrontEnd Developer',
     company: 'Ankaref',
     email: 'aryaacikgoz@outlook.com',
-    socials: { twitter: 'aryaacikgoz', threads: 'aryaacikgoz', github: 'mynraw' }
+    socials: { twitter: 'aryaacikgoz', github: 'mynraw', linkedIn: 'aryaacikgoz' }
 }

@@ -1,5 +1,3 @@
-'use client';
-
 import type { FC } from 'react';
 import { SignInButton, SignOutButton } from '@clerk/nextjs';
 import { currentUser } from '@clerk/nextjs';

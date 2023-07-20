@@ -5,5 +5,5 @@ export interface CardDataProps {
     title: string;
     company: string;
     email: string;
-    socials: object
+    socials: { twitter: string, github: string, linkedIn: string }
 }
