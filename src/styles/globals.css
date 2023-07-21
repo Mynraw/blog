@@ -2,33 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.toggle-wrapper {
-  transition:
-    background-color 0.2s ease-in-out,
-    color 0.2s ease-in-out;
+.light {
   color: #000;
-  user-select: none;
+  background-color: #fff;
+  transition:
+    background-color 0.15s ease-in-out,
+    color 0.15s ease-in-out;
 }
 
-#theme-toggle {
-  visibility: hidden;
-}
-
-#theme-toggle + label {
-  content: '';
-  display: inline-block;
-  cursor: pointer;
-  height: 24px;
-  width: 24px;
-  border-radius: 50%;
-  transition: all 0.3s ease-in-out;
-}
-
-#theme-toggle:not(:checked) + label {
-  background-color: gold;
-}
-
-#theme-toggle:checked + label {
-  background-color: transparent;
-  box-shadow: inset -6px -5px 1px 1px #121212;
+.dark {
+  color: #fff;
+  background: #0d0d0d;
+  transition:
+    background-color 0.15s ease-in-out,
+    color 0.15s ease-in-out;
 }
