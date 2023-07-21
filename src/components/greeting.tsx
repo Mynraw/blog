@@ -4,9 +4,9 @@ const Greeting: FC = () => {
   return (
     <section className="w-full text-lg">
       <div className="flex items-center gap-x-3">
-        <span className="bg-gradient-to-r from-purple-700 to-yellow-600 bg-clip-text text-7xl font-extrabold text-transparent">
+        <span className="bg-gradient-to-r from-purple-700 to-yellow-600 bg-clip-text text-7xl font-extrabold text-transparent dark:bg-gradient-to-l dark:from-lime-400 dark:to-white">
           Hello There
-        </span>{' '}
+        </span>
         <i className="twa-4x twa-waving-hand" />
       </div>
       <p className="opacity-80">I&apos;m Arya Açıkgöz.</p>
