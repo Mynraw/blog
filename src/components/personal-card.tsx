@@ -9,13 +9,13 @@ import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const PersonalCard: FC = () => {
   return (
-    <section className="mx-auto rounded-xl border border-black dark:border-white">
+    <section className="mx-auto min-w-[300px] overflow-hidden rounded-xl border border-black dark:border-lime-400">
       <Image
-        className="rounded-t-lg"
         src={'/card.png'}
         alt="Mynraw himself"
         width={300}
         height={400}
+        priority
       />
       <div className="flex flex-col gap-y-2 px-4 py-4">
         <div className="flex flex-col gap-y-1">
