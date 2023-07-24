@@ -20,7 +20,7 @@ const PersonalCard: FC = () => {
       <div className="flex flex-col gap-y-2 px-4 py-4">
         <div className="flex flex-col gap-y-1">
           <p className="text-lg">{cardData.name}</p>
-          <p className="opacity-70">{cardData.shorter}</p>
+          <p className="font-extralight opacity-70">{cardData.shorter}</p>
         </div>
         <div className="flex items-center gap-x-2">
           <BsKeyboard className="text-2xl opacity-70" />
