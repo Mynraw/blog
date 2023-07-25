@@ -9,6 +9,7 @@ const typeEffectOptions: TypeEffectProps = {
   delay: 50,
   strings: greeting,
   deleteSpeed: 10,
+  skipAddStyles: true,
 };
 
 const Greeting: FC = () => {

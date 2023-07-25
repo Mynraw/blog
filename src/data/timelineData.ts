@@ -1,4 +1,4 @@
-const timelineElements = [
+const timelineElements: Array<object> = [
     {
         id: 1,
         title: "Frontend Developer",
