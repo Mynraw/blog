@@ -35,7 +35,7 @@ const Navbar: FC = () => {
                 Resume
               </Link>
             </li>
-            <li className="cursor-pointer">
+            <li className="relative cursor-pointer">
               <ThemeToggler />
             </li>
           </ul>

@@ -19,11 +19,11 @@ const ThemeToggler: FC = () => {
   };
 
   return (
-    <div>
+    <>
       <input
         type="checkbox"
         id="checkbox"
-        className="group absolute cursor-pointer p-3 opacity-0 checked:translate-x-6"
+        className="group absolute left-0 top-0 h-full w-full cursor-pointer p-3 opacity-0 checked:translate-x-6"
         checked={theme === 'dark' && mounted ? false : true}
         onChange={handleTheme}
       />
@@ -32,10 +32,10 @@ const ThemeToggler: FC = () => {
           <BsMoon className="text-xl text-[#0D0D0D]" />
         )}
         {theme === 'dark' && mounted && (
-          <BsFillSunFill className="text-xl text-yellow-400" />
+          <BsFillSunFill className="cursor-pointer text-xl text-yellow-400" />
         )}
       </label>
-    </div>
+    </>
   );
 };
 
