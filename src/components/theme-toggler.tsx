@@ -23,13 +23,13 @@ const ThemeToggler: FC = () => {
       <input
         type="checkbox"
         id="checkbox"
-        className="group absolute left-0 top-0 h-full w-full cursor-pointer p-3 opacity-0 checked:translate-x-6"
+        className="group absolute left-0 top-0 cursor-pointer p-3 opacity-0"
         checked={theme === 'dark' && mounted ? false : true}
         onChange={handleTheme}
       />
-      <label htmlFor="checkbox" className="h-full w-full cursor-pointer">
+      <label htmlFor="checkbox" className="cursor-pointer">
         {theme === 'light' && mounted && (
-          <BsMoon className="text-xl text-[#0D0D0D]" />
+          <BsMoon className="cursor-pointer text-xl text-[#0D0D0D]" />
         )}
         {theme === 'dark' && mounted && (
           <BsFillSunFill className="cursor-pointer text-xl text-yellow-400" />
