@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="mx-auto min-h-screen max-w-5xl">
-        <div className="mt-8 grid grid-cols-1 items-center p-3 md:mt-16 md:p-6 lg:grid-cols-2 lg:items-start">
+        <div className="mt-8 grid grid-cols-1 items-center p-3 md:mt-16 md:p-6 lg:grid-cols-2 lg:items-start lg:justify-evenly">
           <Greeting />
           <PersonalCard />
         </div>

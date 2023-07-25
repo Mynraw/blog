@@ -1,4 +1,6 @@
 import type { NextPage } from 'next';
+// import {FaGraduationCap} from 'react-icons/fa'
+// import { BsKeyboardFill } from 'react-icons/bs'
 
 import {
   VerticalTimeline,
@@ -10,7 +12,7 @@ import timelineElements from '~/data/timelineData';
 
 const ResumePage: NextPage = () => {
   return (
-    <section className="container mx-auto">
+    <section className="mx-auto">
       <VerticalTimeline layout={'2-columns'} animate={true} lineColor="#fff">
         {timelineElements.map((element) => {
           return (
