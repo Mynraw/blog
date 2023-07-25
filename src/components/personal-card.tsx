@@ -4,16 +4,16 @@ import Link from 'next/link';
 import { BsKeyboard } from 'react-icons/bs';
 import { MdOutlineMail, MdOutlineLocationOn } from 'react-icons/md';
 import { VscMention } from 'react-icons/vsc';
-import { cardData } from '~/data/cardData';
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { cardData } from '~/data/cardData';
 
 const PersonalCard: FC = () => {
   return (
-    <section className="mx-auto min-w-[300px] overflow-hidden rounded-xl border border-black dark:border-lime-400">
+    <section className="relative mx-auto min-w-[310px] overflow-hidden rounded-xl border border-black dark:border-lime-400">
       <Image
         src={'/card.png'}
         alt="Mynraw himself"
-        width={300}
+        width={310}
         height={400}
         priority
       />
