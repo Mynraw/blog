@@ -21,8 +21,8 @@ const Navbar: FC = () => {
         <nav>
           <ul className="flex items-center gap-x-6">
             <li className="cursor-pointer rounded-md py-2 transition-colors ease-linear hover:bg-black hover:bg-opacity-10 dark:hover:bg-white dark:hover:bg-opacity-10">
-              <Link className="px-3 py-2" href={'/post'}>
-                Post
+              <Link className="px-3 py-2" href={'/blog'}>
+                Blog
               </Link>
             </li>
             <li className="dark:hover: cursor-pointer rounded-md py-2 transition-colors ease-linear hover:bg-black hover:bg-opacity-10 dark:hover:bg-white dark:hover:bg-opacity-10">

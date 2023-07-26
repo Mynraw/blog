@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import type { NextPage } from 'next';
 import { FaGraduationCap } from 'react-icons/fa';
 import { BsKeyboardFill } from 'react-icons/bs';
-
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -19,7 +18,7 @@ const ResumePage: NextPage = () => {
   useEffect(() => setMounted(true), []);
 
   return (
-    <section className="mx-auto">
+    <section>
       <VerticalTimeline
         animate={true}
         lineColor={theme === 'dark' ? '#fff' : '#0d0d0d'}
@@ -50,7 +49,7 @@ const ResumePage: NextPage = () => {
                   <BsKeyboardFill />
                 )
               }
-              iconClassName="text-4xl w-20 bg-white dark:bg-black"
+              iconClassName="text-4xl w-20 bg-white dark:bg-[#0d0d0d]"
             >
               <h3 className="text-xl font-bold">{element.title}</h3>
               <h5 className="opacity-70">{element.location}</h5>
