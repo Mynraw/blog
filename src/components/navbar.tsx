@@ -5,8 +5,8 @@ import ThemeToggler from './theme-toggler';
 
 const Navbar: FC = () => {
   return (
-    <header className="sticky top-0 w-full py-5 font-semibold backdrop-blur supports-[backdrop-blur]:bg-white/95">
-      <div className="container mx-auto flex max-w-5xl items-center justify-between">
+    <header className="sticky top-0 w-full py-3 font-semibold backdrop-blur supports-[backdrop-blur]:bg-white/95">
+      <div className="mx-auto flex max-w-3xl items-center justify-between px-3 lg:max-w-5xl">
         <div>
           <Link href={'/'}>
             <Image
@@ -35,7 +35,7 @@ const Navbar: FC = () => {
                 Resume
               </Link>
             </li>
-            <li className="cursor-pointer">
+            <li className="relative cursor-pointer">
               <ThemeToggler />
             </li>
           </ul>

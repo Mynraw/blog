@@ -4,23 +4,23 @@ import Link from 'next/link';
 import { BsKeyboard } from 'react-icons/bs';
 import { MdOutlineMail, MdOutlineLocationOn } from 'react-icons/md';
 import { VscMention } from 'react-icons/vsc';
-import { cardData } from '~/data/cardData';
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { cardData } from '~/data/cardData';
 
 const PersonalCard: FC = () => {
   return (
-    <section className="mx-auto min-w-[300px] overflow-hidden rounded-xl border border-black dark:border-lime-400">
+    <section className="mx-auto hidden min-w-[310px] overflow-hidden rounded-xl border border-black dark:border-lime-400 lg:block">
       <Image
         src={'/card.png'}
         alt="Mynraw himself"
-        width={300}
+        width={310}
         height={400}
         priority
       />
       <div className="flex flex-col gap-y-2 px-4 py-4">
         <div className="flex flex-col gap-y-1">
           <p className="text-lg">{cardData.name}</p>
-          <p className="opacity-70">{cardData.shorter}</p>
+          <p className="font-extralight opacity-70">{cardData.shorter}</p>
         </div>
         <div className="flex items-center gap-x-2">
           <BsKeyboard className="text-2xl opacity-70" />
