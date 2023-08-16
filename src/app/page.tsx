@@ -3,7 +3,7 @@ import Greeting from '~/components/greeting';
 import PersonalCard from '~/components/personal-card';
 import type { Metadata } from 'next';
 
-export const metaData: Metadata = {
+export const metadata: Metadata = {
   title: 'Arya Trying to Code',
   authors: [{ name: 'Arya Açıkgöz', url: 'https://github.com/Mynraw' }],
   icons: '/favicon.ico',

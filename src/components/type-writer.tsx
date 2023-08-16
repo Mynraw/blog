@@ -1,9 +1,9 @@
 'use client';
 
 import type { FC } from 'react';
+import type { TypeEffectProps } from '~/types/typeEffect';
 import TypewriterComponent from 'typewriter-effect';
 import { greeting } from '~/data/typewriterData';
-import type { TypeEffectProps } from '~/types/typeEffect';
 
 const typeEffectOptions: TypeEffectProps = {
   autoStart: true,
@@ -16,7 +16,7 @@ const typeEffectOptions: TypeEffectProps = {
 
 const TypeWriter: FC = () => {
   return (
-    <div className="opacity-80">
+    <div className="text-black dark:text-white">
       <TypewriterComponent options={typeEffectOptions} />
     </div>
   );
