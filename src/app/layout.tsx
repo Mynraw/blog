@@ -1,11 +1,12 @@
 import type { RootLayoutProps } from '~/types/root';
+import type { Metadata } from 'next/types';
 import { ClerkProvider } from '@clerk/nextjs';
+import { ThemeProvider } from '~/components/theme-provider';
+import Navbar from '~/components/navbar';
+import Footer from '~/components/footer';
+import { Inter } from 'next/font/google';
 import '~/styles/globals.css';
 import '~/styles/twemoji.css';
-import { Inter } from 'next/font/google';
-import Navbar from '~/components/navbar';
-import { ThemeProvider } from '~/components/theme-provider';
-import type { Metadata } from 'next/types';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,6 +24,7 @@ const RootLayout = ({ children }: { children: keyof RootLayoutProps }) => {
           <ThemeProvider attribute="class" enableColorScheme>
             <Navbar />
             <main>{children}</main>
+            <Footer />
           </ThemeProvider>
         </ClerkProvider>
       </body>

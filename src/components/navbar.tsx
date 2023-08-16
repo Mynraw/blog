@@ -5,7 +5,7 @@ import ThemeToggler from './theme-toggler';
 
 const Navbar: FC = () => {
   return (
-    <div className="sticky top-0 w-full py-3 font-semibold backdrop-blur supports-[backdrop-blur]:bg-white/95">
+    <div className="sticky top-0 z-10 w-full py-3 font-semibold backdrop-blur supports-[backdrop-blur]:bg-white/95">
       <div className="mx-auto flex max-w-3xl items-center justify-between px-3 lg:max-w-5xl">
         <div>
           <Link href={'/'}>
