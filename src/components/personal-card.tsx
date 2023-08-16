@@ -9,7 +9,7 @@ import { cardData } from '~/data/cardData';
 
 const PersonalCard: FC = () => {
   return (
-    <section className="mx-auto hidden min-w-[310px] overflow-hidden rounded-xl border border-black dark:border-lime-400 lg:block">
+    <section className="ml-auto hidden min-w-[310px] overflow-hidden rounded-xl border border-black dark:border-lime-400 lg:block">
       <Image
         src={'/card.png'}
         alt="Mynraw himself"
