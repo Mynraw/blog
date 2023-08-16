@@ -3,7 +3,8 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 import { type Config } from "tailwindcss";
 
 export default {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./src/**/*.{js,ts,jsx,tsx}",
+    './app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       fontFamily: { sans: ['Inter', ...defaultTheme.fontFamily.sans] }

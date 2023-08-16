@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 import type { NextPage } from 'next';
 import { FaGraduationCap } from 'react-icons/fa';
