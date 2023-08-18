@@ -1,4 +1,5 @@
 import type { FC } from 'react';
+import type { NextComponentType } from 'next';
 import Link from 'next/link';
 import {
   SiTypescript,
@@ -7,7 +8,7 @@ import {
   SiTailwindcss,
 } from 'react-icons/si';
 
-const Navbar: FC = () => {
+const Navbar: FC<NextComponentType> = () => {
   const date: Date = new Date();
 
   return (
