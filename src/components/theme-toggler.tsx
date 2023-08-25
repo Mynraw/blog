@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import type { FC } from 'react';
-import { BsMoon, BsFillSunFill } from 'react-icons/bs';
-
+import { BsMoonStarsFill } from 'react-icons/bs';
+import { ImSun } from 'react-icons/im';
 const ThemeToggler: FC = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
@@ -31,10 +31,10 @@ const ThemeToggler: FC = () => {
       />
       <label htmlFor="checkbox" className="cursor-pointer">
         {theme === 'light' && mounted && (
-          <BsMoon className="cursor-pointer text-xl text-[#0D0D0D]" />
+          <BsMoonStarsFill className="cursor-pointer text-lg text-[#0D0D0D]" />
         )}
         {theme === 'dark' && mounted && (
-          <BsFillSunFill className="cursor-pointer text-xl text-yellow-400" />
+          <ImSun className="cursor-pointer text-lg text-[#E59A00]" />
         )}
       </label>
     </>
