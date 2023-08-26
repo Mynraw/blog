@@ -1,4 +1,4 @@
-import type { RootLayoutProps } from '~/types/root';
+import type { RootLayoutProps } from '~/types/rootLayout';
 import type { Metadata } from 'next/types';
 import { ClerkProvider } from '@clerk/nextjs';
 import { ThemeProvider } from '~/components/theme-provider';

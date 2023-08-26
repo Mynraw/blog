@@ -21,9 +21,7 @@ const ThemeToggler: FC = () => {
   useEffect(() => {
     setMounted(true);
 
-    return () => {
-      setMounted(true);
-    };
+    return () => {};
   }, []);
 
   return (
@@ -33,14 +31,18 @@ const ThemeToggler: FC = () => {
         id="checkbox"
         className="group absolute left-0 top-0 cursor-pointer p-3 opacity-0"
         checked={theme === 'dark' && mounted ? false : true}
-        onClick={handleTheme}
+        onChange={handleTheme}
       />
       <label htmlFor="checkbox" className="cursor-pointer">
-        {theme === 'light' && mounted && (
+        {theme === 'light' && mounted ? (
           <BsMoonStarsFill className="cursor-pointer text-lg text-[#0D0D0D]" />
+        ) : (
+          ''
         )}
-        {theme === 'dark' && mounted && (
+        {theme === 'dark' && mounted ? (
           <LuSun className="cursor-pointer text-lg text-[#E59A00]" />
+        ) : (
+          ''
         )}
       </label>
     </>
