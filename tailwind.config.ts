@@ -7,7 +7,11 @@ export default {
     './app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
-      fontFamily: { sans: ['Inter', ...defaultTheme.fontFamily.sans] }
+      fontFamily: { sans: ['Inter', ...defaultTheme.fontFamily.sans] },
+      screens: {
+        'xs': { max: '475px' },
+        ...defaultTheme.screens
+      }
     },
   },
   darkMode: 'class',

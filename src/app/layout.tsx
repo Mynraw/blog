@@ -7,6 +7,7 @@ import Footer from '~/components/footer';
 import { Inter } from 'next/font/google';
 import '~/styles/globals.css';
 import '~/styles/twemoji.css';
+import MobileNavbar from '~/components/mobile-navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,6 +26,7 @@ const RootLayout = ({ children }: { children: keyof RootLayoutProps }) => {
             <Navbar />
             <main>{children}</main>
             <Footer />
+            <MobileNavbar />
           </ThemeProvider>
         </ClerkProvider>
       </body>

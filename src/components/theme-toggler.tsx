@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import type { FC } from 'react';
 import { BsMoonStarsFill } from 'react-icons/bs';
-import { ImSun } from 'react-icons/im';
+import { LuSun } from 'react-icons/lu';
 const ThemeToggler: FC = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
@@ -34,7 +34,7 @@ const ThemeToggler: FC = () => {
           <BsMoonStarsFill className="cursor-pointer text-lg text-[#0D0D0D]" />
         )}
         {theme === 'dark' && mounted && (
-          <ImSun className="cursor-pointer text-lg text-[#E59A00]" />
+          <LuSun className="cursor-pointer text-lg text-[#E59A00]" />
         )}
       </label>
     </>

@@ -31,7 +31,7 @@ const Navbar: FC = () => {
       </div>
       <div className="mt-2 flex flex-col items-center gap-x-1 text-sm font-normal dark:opacity-80 md:mt-0 md:flex-row">
         <span>Copyright &copy; {date.getFullYear()}</span>
-        <span>•</span>
+        <span className="xs:hidden">•</span>
         <span>Arya&apos;s blog. His attempt to be precise.</span>
       </div>
     </footer>

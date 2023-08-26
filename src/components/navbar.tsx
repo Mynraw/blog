@@ -5,7 +5,7 @@ import ThemeToggler from './theme-toggler';
 
 const Navbar: FC = () => {
   return (
-    <div className="sticky top-0 z-10 w-full py-3 font-semibold backdrop-blur supports-[backdrop-blur]:bg-white/95">
+    <div className="xs:hidden sticky top-0 z-10 w-full overflow-hidden py-3 font-semibold backdrop-blur-lg supports-[backdrop-blur]:bg-white/95">
       <div className="mx-auto flex max-w-3xl items-center justify-between px-3 lg:max-w-5xl">
         <div>
           <Link href={'/'}>
@@ -20,17 +20,17 @@ const Navbar: FC = () => {
         </div>
         <nav>
           <ul className="flex items-center gap-x-6">
-            <li className="cursor-pointer rounded-md py-2 transition-colors ease-linear hover:bg-black hover:bg-opacity-10 dark:hover:bg-white dark:hover:bg-opacity-10">
+            <li className="cursor-pointer rounded-md py-2 transition-colors ease-linear hover:bg-black hover:bg-opacity-10 dark:hover:bg-white dark:hover:bg-opacity-10 sm:block">
               <Link className="px-3 py-2" href={'/blog'}>
                 Blog
               </Link>
             </li>
-            <li className="dark:hover: cursor-pointer rounded-md py-2 transition-colors ease-linear hover:bg-black hover:bg-opacity-10 dark:hover:bg-white dark:hover:bg-opacity-10">
+            <li className="cursor-pointer rounded-md py-2 transition-colors ease-linear hover:bg-black hover:bg-opacity-10 dark:hover:bg-white dark:hover:bg-opacity-10 sm:block">
               <Link className="px-3 py-2" href={'/about'}>
                 About
               </Link>
             </li>
-            <li className="dark:hover: cursor-pointer rounded-md py-2 transition-colors ease-linear hover:bg-black hover:bg-opacity-10 dark:hover:bg-white dark:hover:bg-opacity-10">
+            <li className="cursor-pointer rounded-md py-2 transition-colors ease-linear hover:bg-black hover:bg-opacity-10 dark:hover:bg-white dark:hover:bg-opacity-10 sm:block">
               <Link className="px-3 py-2" href={'/resume'}>
                 Resume
               </Link>
