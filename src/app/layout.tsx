@@ -3,11 +3,11 @@ import type { Metadata } from 'next/types';
 import { ClerkProvider } from '@clerk/nextjs';
 import { ThemeProvider } from '~/components/theme-provider';
 import Navbar from '~/components/navbar';
+import MobileNavbar from '~/components/mobile-navbar';
 import Footer from '~/components/footer';
 import { Inter } from 'next/font/google';
 import '~/styles/globals.css';
 import '~/styles/twemoji.css';
-import MobileNavbar from '~/components/mobile-navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 

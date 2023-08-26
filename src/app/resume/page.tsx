@@ -14,8 +14,8 @@ import { useTheme } from 'next-themes';
 import resumeData from '~/data/resumeData';
 
 const ResumePage: NextPage = () => {
+  const [mounted, setMounted] = useState<boolean>(false);
   const { theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
 

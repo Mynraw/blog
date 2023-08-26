@@ -1,12 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, type FC } from 'react';
 import { useTheme } from 'next-themes';
-import type { FC } from 'react';
 import { BsMoonStarsFill } from 'react-icons/bs';
 import { LuSun } from 'react-icons/lu';
+
 const ThemeToggler: FC = () => {
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState<boolean>(false);
   const { theme, setTheme } = useTheme();
 
   const handleTheme = () => {
@@ -20,6 +20,10 @@ const ThemeToggler: FC = () => {
 
   useEffect(() => {
     setMounted(true);
+
+    return () => {
+      setMounted(true);
+    };
   }, []);
 
   return (
