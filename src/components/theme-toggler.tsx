@@ -9,6 +9,10 @@ const ThemeToggler: FC = () => {
   const [mounted, setMounted] = useState<boolean>(false);
   const { theme, setTheme } = useTheme();
 
+  console.log(theme);
+
+  useEffect(() => setMounted(true), []);
+
   const handleTheme = () => {
     if (theme === 'dark') {
       setTheme('light');
@@ -18,29 +22,20 @@ const ThemeToggler: FC = () => {
     }
   };
 
-  useEffect(() => setMounted(true), []);
-
   return (
-    mounted && (
-      <>
-        <input
-          type="button"
-          id="checkbox"
-          className="group absolute left-0 top-0 cursor-pointer p-3 opacity-0"
-          checked={theme === 'dark' && mounted ? false : true}
-          onClick={handleTheme}
-        />
-        <label htmlFor="checkbox" className="cursor-pointer">
-          {theme === 'light' && (
-            <BsMoonStarsFill className="cursor-pointer text-lg text-[#0D0D0D]" />
-          )}
-
-          {theme === 'dark' && (
-            <LuSun className="cursor-pointer text-lg text-[#E59A00]" />
-          )}
-        </label>
-      </>
-    )
+    <button
+      type="button"
+      id="checkbox"
+      className="cursor-pointer p-1"
+      onClick={handleTheme}
+    >
+      {theme === 'light' && mounted && (
+        <BsMoonStarsFill className="cursor-pointer text-lg text-[#0D0D0D]" />
+      )}
+      {theme === 'dark' && mounted && (
+        <LuSun className="cursor-pointer text-lg text-[#E59A00]" />
+      )}
+    </button>
   );
 };
 

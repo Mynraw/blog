@@ -22,7 +22,11 @@ const RootLayout = ({ children }: { children: keyof RootLayoutProps }) => {
     <html lang="en">
       <body className={inter.className}>
         <ClerkProvider>
-          <ThemeProvider attribute="class" enableColorScheme>
+          <ThemeProvider
+            defaultTheme="dark"
+            attribute="class"
+            enableColorScheme
+          >
             <Navbar />
             <main>{children}</main>
             <Footer />
