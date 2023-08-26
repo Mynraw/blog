@@ -34,8 +34,10 @@ const ThemeToggler: FC = () => {
         onChange={handleTheme}
       />
       <label htmlFor="checkbox" className="cursor-pointer">
-        {theme === 'light' && mounted ? (
+        {/* {theme === 'light' && mounted ? (
+          theme === 'light' && mounted ? (
           <BsMoonStarsFill className="cursor-pointer text-lg text-[#0D0D0D]" />
+        )
         ) : (
           ''
         )}
@@ -43,7 +45,13 @@ const ThemeToggler: FC = () => {
           <LuSun className="cursor-pointer text-lg text-[#E59A00]" />
         ) : (
           ''
-        )}
+        )} */}
+        {mounted &&
+          (theme === 'light' ? (
+            <BsMoonStarsFill className="cursor-pointer text-lg text-[#0D0D0D]" />
+          ) : (
+            <LuSun className="cursor-pointer text-lg text-[#E59A00]" />
+          ))}
       </label>
     </>
   );
