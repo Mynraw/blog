@@ -9,8 +9,6 @@ const ThemeToggler: FC = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
-  useEffect(() => setMounted(true), []);
-
   const handleTheme = () => {
     if (theme === 'dark') {
       setTheme('light');
@@ -20,6 +18,10 @@ const ThemeToggler: FC = () => {
     }
   };
 
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <>
       <input
@@ -27,7 +29,7 @@ const ThemeToggler: FC = () => {
         id="checkbox"
         className="group absolute left-0 top-0 cursor-pointer p-3 opacity-0"
         checked={theme === 'dark' && mounted ? false : true}
-        onChange={handleTheme}
+        onClick={handleTheme}
       />
       <label htmlFor="checkbox" className="cursor-pointer">
         {theme === 'light' && mounted && (
