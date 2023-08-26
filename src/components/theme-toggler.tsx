@@ -18,11 +18,7 @@ const ThemeToggler: FC = () => {
     }
   };
 
-  useEffect(() => {
-    setMounted(true);
-
-    return () => {};
-  }, []);
+  useEffect(() => setMounted(true), []);
 
   return (
     <>
@@ -46,12 +42,13 @@ const ThemeToggler: FC = () => {
         ) : (
           ''
         )} */}
-        {mounted &&
-          (theme === 'light' ? (
-            <BsMoonStarsFill className="cursor-pointer text-lg text-[#0D0D0D]" />
-          ) : (
-            <LuSun className="cursor-pointer text-lg text-[#E59A00]" />
-          ))}
+        {mounted && theme === 'light' && (
+          <BsMoonStarsFill className="cursor-pointer text-lg text-[#0D0D0D]" />
+        )}
+
+        {mounted && theme === 'dark' && (
+          <LuSun className="cursor-pointer text-lg text-[#E59A00]" />
+        )}
       </label>
     </>
   );
