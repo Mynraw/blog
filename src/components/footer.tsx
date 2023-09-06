@@ -5,6 +5,7 @@ import {
   SiNextdotjs,
   SiPrisma,
   SiTailwindcss,
+  SiTrpc
 } from 'react-icons/si';
 
 const Navbar: FC = () => {
@@ -23,6 +24,9 @@ const Navbar: FC = () => {
           </Link>
           <Link href={'https://www.prisma.io/'} target="_blank">
             <SiPrisma />
+          </Link>
+          <Link href={'https:\\trpc.io'} target="_blank">
+            <SiTrpc />
           </Link>
           <Link href={'https://tailwindcss.com/'} target="_blank">
             <SiTailwindcss />
