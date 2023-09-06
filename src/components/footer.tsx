@@ -25,7 +25,7 @@ const Navbar: FC = () => {
           <Link href={'https://www.prisma.io/'} target="_blank">
             <SiPrisma />
           </Link>
-          <Link href={'https:\\trpc.io'} target="_blank">
+          <Link href={'https://trpc.io'} target="_blank">
             <SiTrpc />
           </Link>
           <Link href={'https://tailwindcss.com/'} target="_blank">
