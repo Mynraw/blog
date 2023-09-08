@@ -11,6 +11,13 @@ export default {
       screens: {
         'xs': { max: '475px' },
         ...defaultTheme.screens
+      },
+      colors: {
+        'primary': '#0F0D0E',
+        'secondary': '#F9F4DA',
+        'celtic': '#0BA95B',
+        'lakerHome': '#FCBA28',
+        'lakerAway': '#7B5EA7'
       }
     },
   },

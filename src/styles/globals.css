@@ -3,53 +3,17 @@
 @tailwind utilities;
 
 .light {
-  color: #000;
-  background-color: #fff;
+  color: #0F0D0E;
+  background-color: #F9F4DA;
   transition:
     background-color 0.15s ease-in-out,
     color 0.15s ease-in-out;
 }
 
 .dark {
-  color: #fff;
-  background: #0d0d0d;
+  color: #F9F4DA;
+  background: #0F0D0E;
   transition:
     background-color 0.15s ease-in-out,
     color 0.15s ease-in-out;
-}
-
-.vertical-timeline-element-content {
-  box-shadow:
-    0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
-    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
-  padding: 2em 3em !important;
-}
-
-.vertical-timeline.vertical-timeline--two-columns:before {
-  margin-left: 0 !important;
-}
-
-.vertical-timeline::before {
-  width: 2px !important;
-}
-
-.vertical-timeline-element-content {
-  padding: 24px 36px !important;
-}
-
-.vertical-timeline-element-icon {
-  box-shadow:
-    0 0 0 2px #fff,
-    inset 0 1px 0 rgba(0, 0, 0, 0.08),
-    0 2px 0 2px rgba(0, 0, 0, 0.05) !important;
-}
-
-@media only screen and (max-width: 640px) {
-  .vertical-timeline {
-    margin: 0 !important;
-    width: 72% !important;
-  }
-  .vertical-timeline-element-date {
-    display: none !important;
-  }
 }

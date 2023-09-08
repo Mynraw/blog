@@ -16,7 +16,7 @@ const typeEffectOptions: TypeEffectProps = {
 
 const TypeWriter: FC = () => {
   return (
-    <div className="relative z-0 text-black dark:text-white dark:opacity-80">
+    <div className="relative z-0 text-primary dark:text-secondary dark:opacity-80">
       <TypewriterComponent options={typeEffectOptions} />
     </div>
   );

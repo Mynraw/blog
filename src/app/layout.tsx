@@ -1,6 +1,6 @@
 import type { RootLayoutProps } from '~/types/rootLayout';
 import type { Metadata } from 'next/types';
-import { ClerkProvider } from '@clerk/nextjs';
+// import { ClerkProvider } from '@clerk/nextjs';
 import { ThemeProvider } from '~/components/theme-provider';
 import Navbar from '~/components/navbar';
 import MobileNavbar from '~/components/mobile-navbar';
@@ -21,7 +21,7 @@ const RootLayout = ({ children }: { children: keyof RootLayoutProps }) => {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ClerkProvider>
+        {/* <ClerkProvider> */}
           <ThemeProvider
             defaultTheme="dark"
             attribute="class"
@@ -32,7 +32,7 @@ const RootLayout = ({ children }: { children: keyof RootLayoutProps }) => {
             <Footer />
             <MobileNavbar />
           </ThemeProvider>
-        </ClerkProvider>
+        {/* </ClerkProvider> */}
       </body>
     </html>
   );
