@@ -1,7 +1,7 @@
-import type { FC } from 'react';
+import type { NextPage } from 'next';
 import Image from 'next/image';
 
-const BlogPage: FC = () => {
+const BlogPage: NextPage = () => {
   return (
     <section className="min-h-screen">
       <Image

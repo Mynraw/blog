@@ -9,12 +9,13 @@ import { cardData } from '~/data/cardData';
 
 const PersonalCard: FC = () => {
   return (
-    <section className="ml-auto hidden min-w-[310px] overflow-hidden rounded-xl border border-black dark:border-celtic lg:block">
+    <section className="ml-auto hidden overflow-hidden rounded-lg border border-primary dark:border-celtic lg:block">
       <Image
         src={'/card.png'}
         alt="Mynraw himself"
+        objectFit='contain'
         width={310}
-        height={400}
+        height={350}
         priority
       />
       <div className="flex flex-col gap-y-2 px-4 py-4">

@@ -1,22 +1,17 @@
-'use client';
-
-// import { useEffect, useState } from 'react';
 import type { NextPage } from 'next';
-// import { FaGraduationCap } from 'react-icons/fa';
-// import { BsKeyboardFill } from 'react-icons/bs';
-// import { useTheme } from 'next-themes';
-
-// import resumeData from '~/data/resumeData';
+import Image from 'next/image';
 
 const ResumePage: NextPage = () => {
-  // const [mounted, setMounted] = useState<boolean>(false);
-  // const { theme } = useTheme();
-
-  // useEffect(() => setMounted(true), []);
-
   return (
     <section>
-      
+      <Image
+        className="mx-auto mt-16"
+        src={'/wip.png'}
+        alt="lfg"
+        width={420}
+        height={420}
+        priority
+      />
     </section>
   );
 };

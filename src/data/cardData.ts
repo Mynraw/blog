@@ -2,7 +2,7 @@ import type { CardDataProps } from "~/types/data"
 
 export const cardData: CardDataProps = {
     name: 'Arya Açıkgöz',
-    shorter: 'Developer | Learner',
+    shorter: 'Developer | Learner | Memer',
     location: 'Ankara, Turkey',
     title: 'FrontEnd Developer',
     company: 'Ankaref',

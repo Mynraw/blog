@@ -5,8 +5,8 @@ import ThemeToggler from './theme-toggler';
 
 const Navbar: FC = () => {
   return (
-    <div className="xs:hidden sticky top-0 z-10 w-full overflow-hidden py-3 font-semibold backdrop-blur-lg supports-[backdrop-blur]:bg-white/95">
-      <div className="mx-auto flex max-w-3xl items-center justify-between px-3 lg:max-w-5xl">
+    <div className="xs:hidden sticky top-0 z-10 w-full overflow-hidden py-2 font-semibold backdrop-blur-lg supports-[backdrop-blur]:bg-white/95">
+      <div className="mx-auto flex max-w-3xl items-center justify-between px-3 md:px-6 lg:max-w-5xl">
         <div>
           <Link href={'/'}>
             <Image
@@ -18,27 +18,17 @@ const Navbar: FC = () => {
             />
           </Link>
         </div>
-        <nav>
-          <ul className="flex items-center gap-x-6">
-            <li className="cursor-pointer rounded-md py-2 transition-colors ease-linear hover:bg-black hover:bg-opacity-10 dark:hover:bg-white dark:hover:bg-opacity-10 sm:block">
-              <Link className="px-3 py-2" href={'/blog'}>
+        <nav className="flex items-center gap-x-2">
+              <Link className="cursor-pointer rounded-lg transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary px-2 py-1" href={'/blog'}>
                 Blog
               </Link>
-            </li>
-            <li className="cursor-pointer rounded-md py-2 transition-colors ease-linear hover:bg-black hover:bg-opacity-10 dark:hover:bg-white dark:hover:bg-opacity-10 sm:block">
-              <Link className="px-3 py-2" href={'/about'}>
+              <Link className="cursor-pointer rounded-lg transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary px-2 py-1" href={'/about'}>
                 About
               </Link>
-            </li>
-            <li className="cursor-pointer rounded-md py-2 transition-colors ease-linear hover:bg-black hover:bg-opacity-10 dark:hover:bg-white dark:hover:bg-opacity-10 sm:block">
-              <Link className="px-3 py-2" href={'/resume'}>
+              <Link className="cursor-pointer rounded-lg transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary px-2 py-1" href={'/resume'}>
                 Resume
-              </Link>
-            </li>
-            <li className="relative cursor-pointer">
-              <ThemeToggler />
-            </li>
-          </ul>
+              </Link>  
+              <ThemeToggler /> 
         </nav>
       </div>
     </div>
