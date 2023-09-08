@@ -9,8 +9,6 @@ const ThemeToggler: FC = () => {
   const [mounted, setMounted] = useState<boolean>(false);
   const { theme, setTheme } = useTheme();
 
-  console.log(theme);
-
   useEffect(() => setMounted(true), []);
 
   const handleTheme = () => {
