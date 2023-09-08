@@ -7,5 +7,5 @@ export const cardData: CardDataProps = {
     title: 'FrontEnd Developer',
     company: 'Ankaref',
     email: 'aryaacikgoz@outlook.com',
-    socials: { twitter: 'aryaacikgoz', github: 'mynraw', linkedIn: 'aryaacikgoz' }
+    socials: { twitter: 'aryaacikgoz', github: 'mynraw', linkedIn: 'aryaacikgoz', spotify: 'snuksnuk' }
 }

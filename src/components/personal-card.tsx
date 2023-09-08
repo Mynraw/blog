@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { BsKeyboard } from 'react-icons/bs';
 import { MdOutlineMail, MdOutlineLocationOn } from 'react-icons/md';
 import { VscMention } from 'react-icons/vsc';
-import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaLinkedin, FaSpotify } from 'react-icons/fa';
 import { cardData } from '~/data/cardData';
 import type { ImageType } from '~/types/image';
 
@@ -57,6 +57,12 @@ const PersonalCard: FC = () => {
             target="_blank"
           >
             <FaLinkedin className="text-2xl" />
+          </Link>
+          <Link
+            href={`https://open.spotify.com/user/${cardData.socials.spotify}`}
+            target="_blank"
+          >
+            <FaSpotify className="text-2xl" />
           </Link>
         </div>
       </div>
