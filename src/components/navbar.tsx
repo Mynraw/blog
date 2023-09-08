@@ -18,16 +18,19 @@ const Navbar: FC = () => {
             />
           </Link>
         </div>
-        <nav className="flex items-center gap-x-2">
-              <Link className="cursor-pointer rounded-lg transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary px-2 py-1" href={'/blog'}>
+        <nav className="flex items-center gap-x-1">
+              <Link className="cursor-pointer rounded-lg transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary px-2 py-1" href='/blog'>
                 Blog
               </Link>
-              <Link className="cursor-pointer rounded-lg transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary px-2 py-1" href={'/about'}>
-                About
-              </Link>
-              <Link className="cursor-pointer rounded-lg transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary px-2 py-1" href={'/resume'}>
+              <Link className="cursor-pointer rounded-lg transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary px-2 py-1" href='/resume'>
                 Resume
               </Link>  
+              <Link className="cursor-pointer rounded-lg transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary px-2 py-1" href='/projects'>
+                Projects
+              </Link>  
+              <Link className="cursor-pointer rounded-lg transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary px-2 py-1" href='/about'>
+                About
+              </Link>
               <ThemeToggler /> 
         </nav>
       </div>

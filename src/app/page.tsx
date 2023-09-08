@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Greeting from '~/components/greeting';
 import Introduction from '~/components/introduction';
 import PersonalCard from '~/components/personal-card';
+import ShortRedirects from '~/components/short-redirects';
 
 const HomePage: NextPage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage: NextPage = () => {
         <div className='flex flex-col gap-y-8'>
         <Greeting />
         <Introduction />
+        <ShortRedirects />
         </div>
         <PersonalCard />
       </section>

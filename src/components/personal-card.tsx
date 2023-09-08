@@ -6,22 +6,24 @@ import { MdOutlineMail, MdOutlineLocationOn } from 'react-icons/md';
 import { VscMention } from 'react-icons/vsc';
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { cardData } from '~/data/cardData';
+import type { ImageType } from '~/types/image';
 
 const PersonalCard: FC = () => {
+  const imgProps: ImageType ={ url:'/card.png', alt: 'Mynraw himself', width: 310, height: 350};
+
   return (
     <section className="ml-auto hidden overflow-hidden rounded-lg border border-primary dark:border-celtic lg:block">
       <Image
-        src={'/card.png'}
-        alt="Mynraw himself"
-        objectFit='contain'
-        width={310}
-        height={350}
+        src={imgProps.url}
+        alt={imgProps.alt}
+        width={imgProps.width}
+        height={imgProps.height}
         priority
       />
       <div className="flex flex-col gap-y-2 px-4 py-4">
         <div className="flex flex-col gap-y-1">
           <p className="text-lg">{cardData.name}</p>
-          <p className="font-extralight opacity-70">{cardData.shorter}</p>
+          <p className="font-light opacity-70">{cardData.shorter}</p>
         </div>
         <div className="flex items-center gap-x-2">
           <BsKeyboard className="text-2xl opacity-70" />
