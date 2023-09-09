@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const ResumePage: NextPage = () => {
   return (
-    <section>
+    <section className="min-h-screen">
       <Image
         className="mx-auto mt-16"
         src={'/wip.png'}
