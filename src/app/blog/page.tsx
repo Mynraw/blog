@@ -33,9 +33,9 @@ const BlogPage: NextPage = () => {
             <div className="flex justify-between gap-2 py-2 align-middle">
               <div>
                 <h3 className="text-lg font-bold">{blog.meta.title}</h3>
-                <p className="text-gray-400">{blog.meta.description}</p>
+                <p>{blog.meta.description}</p>
               </div>
-              <div className="my-auto text-gray-400">
+              <div className="my-auto">
                 <p>{blog.meta.date}</p>
               </div>
             </div>
