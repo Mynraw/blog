@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   publisher: 'Arya Açıkgöz',
   robots: 'index, follow',
   openGraph: {type: 'website', url:'https://www.aryaacikgoz.com', title: 'Arya Trying to Code', description: 'Arya Trying to Code - Arya\'s blog'},
-  twitter: { card: "summary_large_image", site: "@typeofvirtual", creator: "@typeofvirtual", "images": "/card.png" },
-  appleWebApp: { capable: true, title: "Arya Trying to Code", statusBarStyle: "black-translucent" }
+  twitter: { card: "summary_large_image", site: "https://x.com/typeofvirtual", creator: "@typeofvirtual", "images": "/card.png" },
+  appleWebApp: { capable: true, title: "Arya Trying to Code - Arya\'s Blog", statusBarStyle: "black-translucent" }
 };
 
 const RootLayout = ({ children }: { children: keyof RootLayoutProps }) => {
