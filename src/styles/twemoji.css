@@ -51,12 +51,6 @@
   background-size: 5em 5em;
 }
 
-.twa-grinning-squinting-face {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f606.svg');
-}
-.twa-lying-face {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f925.svg');
-}
 .twa-sneezing-face {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f927.svg');
 }
@@ -65,12 +59,6 @@
 }
 .twa-face-with-steam-from-nose {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f624.svg');
-}
-.twa-beaming-face-with-smiling-eyes {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f601.svg');
-}
-.twa-cat-with-tears-of-joy {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f639.svg');
 }
 .twa-star-struck {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f929.svg');
@@ -89,9 +77,6 @@
 }
 .twa-grinning-face-with-sweat {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f605.svg');
-}
-.twa-grinning-face-with-big-eyes {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f603.svg');
 }
 .twa-face-with-tears-of-joy {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f602.svg');
@@ -129,9 +114,6 @@
 .twa-folded-hands {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f64f.svg');
 }
-.twa-glowing-star {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f31f.svg');
-}
 .twa-thinking-face {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f914.svg');
 }
@@ -150,23 +132,11 @@
 .twa-pig-face {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f437.svg');
 }
-.twa-baby {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f476.svg');
-}
 .twa-chart-increasing {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f4c8.svg');
 }
 .twa-rocket {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f680.svg');
-}
-.twa-man-getting-massage {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f486-200d-2642-fe0f.svg');
-}
-.twa-delivery-truck {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f69a.svg');
-}
-.twa-man-construction-worker-medium-light-skin-tone {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f477-1f3fc-200d-2642-fe0f.svg');
 }
 .twa-see-no-evil-monkey {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f648.svg');
@@ -195,9 +165,6 @@
 .twa-cross-mark {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/274c.svg');
 }
-.twa-clinking-beer-mugs {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f37b.svg');
-}
 .twa-partying-face {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f973.svg');
 }
@@ -207,32 +174,11 @@
 .twa-flexed-biceps {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f4aa.svg');
 }
-.twa-keycap-1 {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/31-20e3.svg');
-}
-.twa-keycap-2 {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/32-20e3.svg');
-}
-.twa-keycap-3 {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/33-20e3.svg');
-}
-.twa-keycap-4 {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/34-20e3.svg');
-}
-.twa-keycap-5 {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/35-20e3.svg');
-}
-.twa-keycap-6 {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/36-20e3.svg');
-}
 .twa-owl {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f989.svg');
 }
 .twa-face-with-symbols-on-mouth {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f92c.svg');
-}
-.twa-flag-vietnam {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1fb-1f1f3.svg');
 }
 .twa-hammer-and-wrench {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f6e0.svg');
@@ -242,9 +188,6 @@
 }
 .twa-briefcase {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f4bc.svg');
-}
-.twa-dna {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f9ec.svg');
 }
 .twa-memo {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f4dd.svg');
@@ -258,9 +201,6 @@
 .twa-man-technologist {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f468-200d-1f4bb.svg');
 }
-.twa-inbox-tray {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f4e5.svg');
-}
 .twa-guard {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f482.svg');
 }
@@ -272,9 +212,6 @@
 }
 .twa-atom-symbol {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/269b.svg');
-}
-.twa-musical-keyboard {
-  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f3b9.svg');
 }
 .twa-chess-pawn {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/265f.svg');
@@ -293,4 +230,7 @@
 }
 .twa-boom {
   background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f4a5.svg');
+}
+.twa-cheers {
+  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f37b.svg');
 }
