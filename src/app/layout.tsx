@@ -15,6 +15,17 @@ export const metadata: Metadata = {
   title: 'Arya Trying to Code',
   authors: [{ name: 'Arya Açıkgöz', url: 'https://github.com/Mynraw' }],
   icons: '/favicon.ico',
+  description: 'Arya Trying to Code - Arya\'s Blog',
+  applicationName: 'Arya Trying to Code - Arya\'s Blog - Arya\s Blog',
+  generator: 'arya, acikgoz, açıkgöz, nextjs, react, blog',
+  referrer: 'origin',
+  viewport: {width: 'device-width', initialScale: 1},
+  creator: 'Arya Açıkgöz',
+  publisher: 'Arya Açıkgöz',
+  robots: 'index, follow',
+  openGraph: {type: 'website', url:'https://www.aryaacikgoz.com', title: 'Arya Trying to Code', description: 'Arya\'s blog'},
+  twitter: { card: "summary_large_image", site: "@site", creator: "@creator", "images": "/card.png" },
+  appleWebApp: { capable: true, title: "Arya Trying to Code", statusBarStyle: "black-translucent" }
 };
 
 const RootLayout = ({ children }: { children: keyof RootLayoutProps }) => {
