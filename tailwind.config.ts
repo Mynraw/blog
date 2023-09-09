@@ -18,9 +18,11 @@ export default {
         'celtic': '#0BA95B',
         'lakerHome': '#FCBA28',
         'lakerAway': '#7B5EA7'
-      }
+      },
     },
   },
   darkMode: 'class',
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 } satisfies Config;
