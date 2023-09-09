@@ -1,6 +1,4 @@
-type IntroductionData = {
-    id: number, content: string;
-}
+import type { IntroductionData } from "~/types/introduction";
 
 export const introductionData: Array<IntroductionData> = [
     { id: 1, content: 'I started to work as \'Software Support Specialist\' in 2018.' },

@@ -1,4 +1,6 @@
-const timelineElements: Array<object> = [
+import type { TimelineElementsProps } from "~/types/timeline";
+
+const timelineElements: Array<TimelineElementsProps> = [
     {
         id: 1,
         title: "Frontend Developer",

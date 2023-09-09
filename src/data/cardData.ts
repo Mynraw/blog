@@ -1,4 +1,4 @@
-import type { CardDataProps } from "~/types/data"
+import type { CardDataProps } from "~/types/cardData"
 
 export const cardData: CardDataProps = {
     name: 'Arya Açıkgöz',

@@ -1,4 +1,3 @@
-// For 'Greeting' component
 export const greeting: Array<string> = [
     'I\'m Arya Açıkgöz.',
     'Started coding in 2022.',
