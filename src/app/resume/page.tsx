@@ -25,7 +25,7 @@ const Resume = () => {
 
   return (
     <article className={proseOverride}>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between xs:flex-wrap xs:gap-y-4">
         <h1 className="m-0">{title}</h1>
         <strong>
           Last Updated:{' '}
