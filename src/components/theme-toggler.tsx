@@ -26,20 +26,20 @@ const ThemeToggler: FC<ThemeTogglerProps> = (props) => {
     <button
       type="button"
       id="checkbox"
-      className={`cursor-pointer ${mobileResolution && 'px-2 py-3'}`}
+      className={`cursor-pointer ${mobileResolution && 'p-2'}`}
       onClick={handleTheme}
     >
       {theme === 'light' && mounted && (
         <BsMoonStarsFill
           className={`cursor-pointer text-[#0D0D0D] ${
-            mobileResolution ? 'text-2xl' : 'text-lg'
+            mobileResolution ? 'text-xl' : 'text-lg'
           }`}
         />
       )}
       {theme === 'dark' && mounted && (
         <LuSun
           className={`cursor-pointer text-[#E59A00] ${
-            mobileResolution ? 'text-2xl' : 'text-lg'
+            mobileResolution ? 'text-xl' : 'text-lg'
           }`}
         />
       )}
