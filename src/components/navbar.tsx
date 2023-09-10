@@ -5,7 +5,7 @@ import ThemeToggler from './theme-toggler';
 
 const Navbar: FC = () => {
   return (
-    <div className="xs:hidden sticky top-0 z-10 w-full overflow-hidden py-2 font-semibold backdrop-blur-lg supports-[backdrop-blur]:bg-white/95">
+    <div className="sticky top-0 z-10 w-full overflow-hidden py-2 font-semibold backdrop-blur-lg supports-[backdrop-blur]:bg-white/95 xs:hidden">
       <div className="mx-auto flex max-w-3xl items-center justify-between px-3 md:px-6 lg:max-w-5xl">
         <div>
           <Link href={'/'}>
@@ -19,19 +19,31 @@ const Navbar: FC = () => {
           </Link>
         </div>
         <nav className="flex items-center gap-x-1">
-              <Link className="cursor-pointer rounded-lg transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary px-2 py-1" href='/blog'>
-                Blog
-              </Link>
-              <Link className="cursor-pointer rounded-lg transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary px-2 py-1" href='/resume'>
-                Resume
-              </Link>  
-              <Link className="cursor-pointer rounded-lg transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary px-2 py-1" href='/projects'>
-                Projects
-              </Link>  
-              <Link className="cursor-pointer rounded-lg transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary px-2 py-1" href='/about'>
-                About
-              </Link>
-              <ThemeToggler /> 
+          <Link
+            className="cursor-pointer rounded-lg px-2 py-1 transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary"
+            href="/blog"
+          >
+            Blog
+          </Link>
+          <Link
+            className="cursor-pointer rounded-lg px-2 py-1 transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary"
+            href="/resume"
+          >
+            Resume
+          </Link>
+          <Link
+            className="cursor-pointer rounded-lg px-2 py-1 transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary"
+            href="/projects"
+          >
+            Projects
+          </Link>
+          <Link
+            className="cursor-pointer rounded-lg px-2 py-1 transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary"
+            href="/about"
+          >
+            About
+          </Link>
+          <ThemeToggler mobileResolution={false} />
         </nav>
       </div>
     </div>
