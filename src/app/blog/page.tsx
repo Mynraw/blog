@@ -24,7 +24,7 @@ const BlogPage: NextPage = () => {
   });
 
   return (
-    <section className="mx-auto min-h-screen max-w-5xl px-3 pt-8 md:px-6 xl:max-w-[80%]">
+    <section className="3xl:max-w-[80%] mx-auto min-h-screen max-w-5xl px-3 pt-8 md:px-6">
       <h2 className="text-2xl font-bold">Latest Blogs</h2>
 
       <div className="py-2">

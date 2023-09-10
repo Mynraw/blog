@@ -10,6 +10,7 @@ export default {
       fontFamily: { sans: ['Inter', ...defaultTheme.fontFamily.sans] },
       screens: {
         'xs': { max: '475px' },
+        '3xl': '2560px',
         ...defaultTheme.screens
       },
       colors: {
