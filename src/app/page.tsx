@@ -6,7 +6,7 @@ import ShortRedirects from '~/components/short-redirects';
 
 const HomePage: NextPage = () => {
   return (
-    <div className="mx-auto min-h-screen max-w-5xl">
+    <div className="mx-auto min-h-screen max-w-5xl xl:max-w-[80%]">
       <section className="mt-8 grid grid-cols-1 items-center px-3 md:mt-16 md:px-6 lg:grid-cols-2 lg:items-start lg:justify-between xs:px-6 xs:pt-3">
         <div className="flex flex-col gap-y-8">
           <Greeting />

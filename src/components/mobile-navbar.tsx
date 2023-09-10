@@ -11,9 +11,7 @@ const MobileNavbar: FC = () => {
           <Link className="p-2" href={'/'}>
             <LuHome className="text-xl" />
           </Link>
-
           <div className="h-7 border-r border-primary opacity-30 dark:border-secondary" />
-
           <Link className="p-2" href={'/blog'}>
             <LuBookMarked className="text-xl" />
           </Link>
@@ -26,7 +24,6 @@ const MobileNavbar: FC = () => {
             <LuFileBadge className="text-xl" />
           </Link>
           <div className="h-7 border-r border-primary opacity-30 dark:border-secondary" />
-
           <ThemeToggler mobileResolution />
         </nav>
       </div>

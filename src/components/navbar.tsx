@@ -6,7 +6,7 @@ import ThemeToggler from './theme-toggler';
 const Navbar: FC = () => {
   return (
     <div className="sticky top-0 z-10 w-full overflow-hidden py-2 font-semibold backdrop-blur-lg supports-[backdrop-blur]:bg-white/95 xs:hidden">
-      <div className="mx-auto flex max-w-3xl items-center justify-between px-3 md:px-6 lg:max-w-5xl">
+      <div className="mx-auto flex max-w-3xl max-w-5xl items-center justify-between px-3 md:px-6 xl:max-w-[80%]">
         <div>
           <Link href={'/'}>
             <Image
@@ -14,6 +14,7 @@ const Navbar: FC = () => {
               alt="Mynraw"
               width={50}
               height={50}
+              priority
               className="rounded-full"
             />
           </Link>
