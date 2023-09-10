@@ -21,11 +21,19 @@ const getPost = (slug: string) => {
 const Resume = () => {
   const resume = getPost('resume');
   const { frontMatter, content } = resume;
+  const { title, lastUpdated } = frontMatter;
 
   return (
     <article className={proseOverride}>
-      <h1>{frontMatter.title}</h1>
-
+      <div className="flex items-center justify-between">
+        <h1 className="m-0">{title}</h1>
+        <strong>
+          Last Updated:{' '}
+          <span className="font-light italic text-primary dark:text-secondary">
+            {lastUpdated}
+          </span>
+        </strong>
+      </div>
       <MDXRemote source={content} />
     </article>
   );
