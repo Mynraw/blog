@@ -5,7 +5,7 @@ import { LuHome, LuBookMarked, LuCode2, LuFileBadge } from 'react-icons/lu';
 
 const MobileNavbar: FC = () => {
   return (
-    <div className="sticky bottom-0 w-full overflow-hidden border-t border-primary border-opacity-20 py-3 backdrop-blur-lg supports-[backdrop-blur]:bg-white/95 dark:border-secondary dark:border-opacity-20 sm:hidden">
+    <div className="sticky bottom-0 w-full overflow-hidden border-t border-primary border-opacity-20 py-2 backdrop-blur-lg supports-[backdrop-blur]:bg-white/95 dark:border-secondary dark:border-opacity-20 sm:hidden">
       <div className="mx-auto">
         <nav>
           <ul className="flex items-center justify-evenly">
