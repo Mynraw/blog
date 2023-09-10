@@ -4,15 +4,20 @@ import Link from 'next/link';
 import { BsKeyboard } from 'react-icons/bs';
 import { MdOutlineMail, MdOutlineLocationOn } from 'react-icons/md';
 import { VscMention } from 'react-icons/vsc';
-import { FaTwitter, FaGithub, FaLinkedin, FaSpotify } from 'react-icons/fa';
+import { FaXTwitter, FaGithub, FaLinkedin, FaSpotify } from 'react-icons/fa6';
 import { cardData } from '~/data/cardData';
 import type { ImageType } from '~/types/image';
 
 const PersonalCard: FC = () => {
-  const imgProps: ImageType ={ url:'/card.png', alt: 'Mynraw himself', width: 310, height: 350};
+  const imgProps: ImageType = {
+    url: '/card.png',
+    alt: 'Mynraw himself',
+    width: 310,
+    height: 350,
+  };
 
   return (
-    <section className="ml-auto hidden overflow-hidden rounded-lg border border-primary dark:border-celtic lg:block hover:scale-110 transition-all hover:transition-all">
+    <section className="ml-auto hidden overflow-hidden rounded-lg border border-primary transition-all hover:scale-110 hover:transition-all dark:border-celtic lg:block">
       <Image
         src={imgProps.url}
         alt={imgProps.alt}
@@ -44,7 +49,7 @@ const PersonalCard: FC = () => {
             href={`https://twitter.com/${cardData.socials.twitter}`}
             target="_blank"
           >
-            <FaTwitter className="text-2xl" />
+            <FaXTwitter className="text-2xl" />
           </Link>
           <Link
             href={`https://github.com/${cardData.socials.github}`}
