@@ -12,12 +12,12 @@ const PersonalCard: FC = () => {
   const imgProps: ImageType = {
     url: '/card.png',
     alt: 'Mynraw himself',
-    width: 310,
-    height: 350,
+    width: 334,
+    height: 320,
   };
 
   return (
-    <section className="ml-auto hidden overflow-hidden rounded-lg border border-primary transition-all hover:scale-110 hover:transition-all dark:border-celtic lg:block">
+    <section className="ml-auto hidden overflow-hidden rounded-2xl border border-primary transition-all hover:scale-105 hover:transition-all dark:border-dashed dark:border-celtic lg:block">
       <Image
         src={imgProps.url}
         alt={imgProps.alt}

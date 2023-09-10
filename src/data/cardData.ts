@@ -5,7 +5,7 @@ export const cardData: CardDataProps = {
     shorter: 'Developer | Learner',
     location: 'Ankara, Turkey',
     title: 'FrontEnd Developer',
-    company: 'TK Technology',
+    company: 'TK Teknoloji',
     email: 'aryaacikgoz@outlook.com',
     socials: { twitter: 'typeofvirtual', github: 'mynraw', linkedIn: 'aryaacikgoz', spotify: 'snuksnuk' }
 }
