@@ -1,19 +1,34 @@
-import type { NextPage } from 'next';
-import Image from 'next/image';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import { MDXRemote } from 'next-mdx-remote/rsc';
+import { proseOverride } from '~/data/proseOverride';
 
-const ResumePage: NextPage = () => {
+const getPost = (slug: string) => {
+  const markdownFile = fs.readFileSync(
+    path.join('src/content/resume', slug + '.mdx'),
+    'utf-8',
+  );
+
+  const { data: frontMatter, content } = matter(markdownFile);
+
+  return {
+    frontMatter,
+    content,
+  };
+};
+
+const Resume = () => {
+  const resume = getPost('resume');
+  const { frontMatter, content } = resume;
+
   return (
-    <section className="min-h-screen">
-      <Image
-        className="mx-auto mt-16"
-        src={'/wip.png'}
-        alt="lfg"
-        width={420}
-        height={420}
-        priority
-      />
-    </section>
+    <article className={proseOverride}>
+      <h1>{frontMatter.title}</h1>
+
+      <MDXRemote source={content} />
+    </article>
   );
 };
 
-export default ResumePage;
+export default Resume;
