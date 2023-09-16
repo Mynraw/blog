@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { MDXRemote } from 'next-mdx-remote/rsc';
+import Header from '~/components/header';
 import { proseOverride } from '~/data/proseOverride';
 
 const getPost = (slug: string) => {
@@ -21,18 +22,20 @@ const getPost = (slug: string) => {
 const Resume = () => {
   const resume = getPost('resume');
   const { frontMatter, content } = resume;
-  const { title, lastUpdated } = frontMatter;
+  const { lastUpdated } = frontMatter;
+
+  const resumeTitle: string = 'Resume';
+  const resumeDescription: string = 'My experiences and skills';
+  const lastUpdateDate = lastUpdated as string;
 
   return (
     <article className={proseOverride}>
-      <div className="mt-8 flex items-center justify-between xs:flex-wrap xs:gap-y-4">
-        <h1 className="m-0">{title}</h1>
-        <strong>
-          Last Updated:{' '}
-          <span className="font-light italic text-primary dark:text-secondary">
-            {lastUpdated}
-          </span>
-        </strong>
+      <div className="mt-8 xs:mt-3">
+        <Header
+          title={resumeTitle}
+          label={resumeDescription}
+          lastUpdated={lastUpdateDate}
+        />
       </div>
       <MDXRemote source={content} />
     </article>
