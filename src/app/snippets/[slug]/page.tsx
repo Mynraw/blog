@@ -15,7 +15,7 @@ interface ParamProps {
 }
 
 export const generateStaticParams = () => {
-  const snippetDir = 'src/content/blog';
+  const snippetDir = 'src/content/snippet';
   const files = fs.readdirSync(path.join(snippetDir));
 
   const paths = files.map((filename) => ({
