@@ -24,14 +24,14 @@ const SnippetsPage: NextPage = () => {
       slug: filename.replace('.mdx', ''),
     };
   });
-  // xs: 64, xl: 80
+
   return (
     <section className="mx-auto mt-8 min-h-screen max-w-5xl px-3 pt-8 md:px-6 xs:mt-3 xs:px-3 xs:pt-3 3xl:max-w-[80%]">
       <Header label={snippetLabel} title={snippetTitle} />
       <div className="grid-cols-2 py-12 lg:grid">
         {snippets.map((snippet) => (
           <Link href={`/snippets/${snippet.slug}`} key={snippet.slug}>
-            <div className="shadow-intense dark:shadow-intense-dark flex items-center gap-x-6 rounded-xl border border-transparent p-4 text-primary shadow-primary transition-all hover:shadow-md dark:text-secondary dark:transition-all dark:hover:shadow-md dark:hover:shadow-secondary xs:p-2">
+            <div className="flex items-center gap-x-6 rounded-xl border border-transparent p-4 text-primary shadow-intense shadow-primary transition-all hover:shadow-md dark:text-secondary dark:shadow-intense-dark dark:transition-all dark:hover:shadow-md dark:hover:shadow-secondary xs:p-2">
               <div className="relative h-20 w-20 xs:h-14 xs:w-14">
                 <Image
                   src={`/icons/${snippet.meta.icon}.svg`}
