@@ -25,7 +25,7 @@ export const generateStaticParams = () => {
   return paths;
 };
 
-const getPost = ({ slug }: { slug: string }) => {
+const getSnippet = ({ slug }: { slug: string }) => {
   const markdownFile = fs.readFileSync(
     path.join('src/content/snippet', slug + '.mdx'),
     'utf-8',
@@ -41,7 +41,7 @@ const getPost = ({ slug }: { slug: string }) => {
 };
 
 const SnippetPost = ({ params }: ParamProps) => {
-  const props = getPost(params);
+  const props = getSnippet(params);
   const { frontMatter, content } = props;
 
   return (
