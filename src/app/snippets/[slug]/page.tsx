@@ -15,8 +15,8 @@ interface ParamProps {
 }
 
 export const generateStaticParams = () => {
-  const blogDir = 'src/content/blog';
-  const files = fs.readdirSync(path.join(blogDir));
+  const snippetDir = 'src/content/blog';
+  const files = fs.readdirSync(path.join(snippetDir));
 
   const paths = files.map((filename) => ({
     slug: filename.replace('.mdx', ''),
@@ -27,7 +27,7 @@ export const generateStaticParams = () => {
 
 const getPost = ({ slug }: { slug: string }) => {
   const markdownFile = fs.readFileSync(
-    path.join('src/content/blog', slug + '.mdx'),
+    path.join('src/content/snippet', slug + '.mdx'),
     'utf-8',
   );
 
@@ -40,17 +40,17 @@ const getPost = ({ slug }: { slug: string }) => {
   };
 };
 
-const BlogPost = ({ params }: ParamProps) => {
+const SnippetPost = ({ params }: ParamProps) => {
   const props = getPost(params);
   const { frontMatter, content } = props;
 
   return (
     <article className={proseOverride}>
-      <h1>{frontMatter.title}</h1>
+      <h1>{frontMatter.description}</h1>
 
       <MDXRemote source={content} />
     </article>
   );
 };
 
-export default BlogPost;
+export default SnippetPost;

@@ -20,6 +20,10 @@ export default {
         'lakerHome': '#FCBA28',
         'lakerAway': '#7B5EA7'
       },
+      boxShadow: {
+        'intense': 'rgba(15, 13, 14, 1) 0px 0px 16px',
+        'intense-dark': 'rgba(249, 244, 218, 1) 0px 0px 16px',
+      }
     },
   },
   darkMode: 'class',

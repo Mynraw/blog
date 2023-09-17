@@ -1,0 +1,27 @@
+---
+title: useIcon Hook
+date: '17th September 2023'
+lastUpdated: ''
+description: Custom hook for dynamic MUI icons
+email: aryaacikgoz@outlook.com
+linkedin: https://www.linkedin.com/in/aryaacikgoz/
+github: https://github.com/mynraw
+twitter: https://twitter.com/typeofvirtual
+icon: 'react'
+---
+
+##
+
+```
+...
+import IconNames from '...' // Think about like there is an array of icon names that will be used.
+
+export const useIcon = ({iconName: string}) => {
+
+    const Icon = IconNames.filter((icon) => icon.name === iconName)
+
+    if (!Icon) return <FallbackIcon> // JIT
+
+    return <Icon />
+}
+```

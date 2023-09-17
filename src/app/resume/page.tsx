@@ -1,3 +1,4 @@
+import type { NextPage } from 'next';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -19,7 +20,7 @@ const getPost = (slug: string) => {
   };
 };
 
-const Resume = () => {
+const ResumePage: NextPage = () => {
   const resume = getPost('resume');
   const { frontMatter, content } = resume;
   const { lastUpdated } = frontMatter;
@@ -42,4 +43,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default ResumePage;

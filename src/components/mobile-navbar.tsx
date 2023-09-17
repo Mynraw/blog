@@ -16,7 +16,7 @@ const MobileNavbar: FC = () => {
             <LuBookMarked className="text-xl" />
           </Link>
           <div className="h-7 border-r border-primary opacity-30 dark:border-secondary" />
-          <Link className="p-2" href="/about">
+          <Link className="p-2" href="/snippets">
             <LuCode2 className="text-xl" />
           </Link>
           <div className="h-7 border-r border-primary opacity-30 dark:border-secondary" />
