@@ -4,7 +4,6 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Header from '~/components/header';
-// import Snippet from '~/components/snippet';
 import Image from 'next/image';
 
 const SnippetsPage: NextPage = () => {
