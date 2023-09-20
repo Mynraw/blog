@@ -1,6 +1,6 @@
 export interface SnippetProps {
-  imgUrl: string;
-  header: string;
-  label: string;
-  slugUrl: string;
+  slug: string;
+  icon: string;
+  title: string;
+  description: string;
 }

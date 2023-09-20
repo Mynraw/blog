@@ -29,6 +29,7 @@ export const metadata: Metadata = {
     url: 'https://www.aryaacikgoz.com',
     title: 'Arya Trying to Code',
     description: "Arya Trying to Code - Arya's blog",
+    images: '/card.png',
   },
   twitter: {
     card: 'summary_large_image',
@@ -41,6 +42,7 @@ export const metadata: Metadata = {
     title: "Arya Trying to Code - Arya's Blog",
     statusBarStyle: 'black-translucent',
   },
+  metadataBase: new URL('https://aryaacikgoz.com'),
 };
 
 const RootLayout = ({ children }: { children: keyof RootLayoutProps }) => {

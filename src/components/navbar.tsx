@@ -34,9 +34,9 @@ const Navbar: FC = () => {
           </Link>
           <Link
             className="cursor-pointer rounded-lg px-2 py-1 transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary"
-            href="/projects"
+            href="/snippets"
           >
-            Projects
+            Snippets
           </Link>
           <Link
             className="cursor-pointer rounded-lg px-2 py-1 transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary"
