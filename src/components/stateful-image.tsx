@@ -10,7 +10,7 @@ const StatefulImage: FC<ImageType> = (props) => {
 
   return (
     <Image
-      className={`${!isLoaded ? 'blur-md' : 'blur-0'}`}
+      className={`${!isLoaded ? 'blur-md' : 'blur-0'} transition-all`}
       alt={alt}
       width={width}
       height={height}
