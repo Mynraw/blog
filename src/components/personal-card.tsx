@@ -1,5 +1,4 @@
 import type { FC } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { BsKeyboard } from 'react-icons/bs';
 import { MdOutlineMail, MdOutlineLocationOn } from 'react-icons/md';
@@ -7,6 +6,7 @@ import { VscMention } from 'react-icons/vsc';
 import { FaXTwitter, FaGithub, FaLinkedin, FaSpotify } from 'react-icons/fa6';
 import { cardData } from '~/data/cardData';
 import type { ImageType } from '~/types/image';
+import StatefulImage from './stateful-image';
 
 const PersonalCard: FC = () => {
   const imgProps: ImageType = {
@@ -14,16 +14,17 @@ const PersonalCard: FC = () => {
     alt: 'Mynraw himself',
     width: 334,
     height: 320,
+    priority: true,
   };
 
   return (
     <section className="ml-auto hidden overflow-hidden rounded-2xl border border-primary transition-all hover:scale-105 hover:transition-all dark:border-dashed dark:border-celtic lg:block">
-      <Image
-        src={imgProps.url}
+      <StatefulImage
+        url={imgProps.url}
         alt={imgProps.alt}
         width={imgProps.width}
         height={imgProps.height}
-        priority
+        priority={imgProps.priority}
       />
       <div className="flex flex-col gap-y-2 px-4 py-4">
         <div className="flex flex-col gap-y-1">
