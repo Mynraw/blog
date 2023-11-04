@@ -20,7 +20,6 @@ export const metadata: Metadata = {
   generator:
     'arya, acikgoz, açıkgöz, aryaacikgoz, nextjs, react, typescript, blog',
   referrer: 'origin',
-  viewport: { width: 'device-width', initialScale: 1 },
   creator: 'Arya Açıkgöz',
   publisher: 'Arya Açıkgöz',
   robots: 'index, follow',

@@ -16,7 +16,7 @@ const StatefulImage: FC<ImageType> = (props) => {
       height={height}
       src={url}
       priority={priority}
-      onLoadingComplete={() => setIsLoaded(true)}
+      onLoad={() => setIsLoaded(true)}
     />
   );
 };
