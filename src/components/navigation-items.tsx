@@ -4,25 +4,13 @@ import type { FC } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import ThemeToggler from './theme-toggler';
-import Image from 'next/image';
+
 
 const NavigationItems: FC = () => {
   const pathname = usePathname();
 
   return (
-    <div className="mx-auto flex max-w-5xl items-center justify-between px-3 md:px-6 3xl:max-w-[80%]">
-      <div>
-        <Link href="/">
-          <Image
-            src="https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yU2hGVVdzMnJBM2J0ZTZGeE8yN2VsY1R0UFUuZ2lmIn0"
-            alt="Mynraw"
-            width={50}
-            height={50}
-            priority
-            className="rounded-full"
-          />
-        </Link>
-      </div>
+    
       <nav>
         <ul role="list" className="flex items-center gap-x-1">
           <li>
@@ -68,7 +56,7 @@ const NavigationItems: FC = () => {
           <ThemeToggler mobileResolution={false} />
         </ul>
       </nav>
-    </div>
+
   );
 };
 
