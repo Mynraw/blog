@@ -1,5 +1,4 @@
 import type { FC } from 'react';
-
 import NavigationItems from './navigation-items';
 
 const Navbar: FC = () => {
