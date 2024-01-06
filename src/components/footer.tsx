@@ -12,7 +12,7 @@ const Navbar: FC = () => {
   const date: Date = new Date();
 
   return (
-    <footer className="3xl:max-w-[80%] mx-auto px-3 pb-8 pt-16 md:flex md:items-center md:justify-between md:px-6 lg:max-w-5xl">
+    <footer className="mx-auto px-3 pb-8 pt-16 md:flex md:items-center md:justify-between md:px-6 lg:max-w-5xl 3xl:max-w-[80%]">
       <div className="flex items-center justify-center gap-x-2">
         <span className="dark:opacity-80">Built with</span>
         <div className="flex items-center gap-x-2 text-xl">
