@@ -19,6 +19,7 @@
     "@trpc/next": "^11.0.0-next-alpha.152",
     "@trpc/react-query": "next",
     "@trpc/server": "next",
+    "@vercel/speed-insights": "^1.0.2",
     "gray-matter": "^4.0.3",
     "next": "^14.0.4",
     "next-mdx-remote": "^4.4.1",

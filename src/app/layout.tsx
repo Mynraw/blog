@@ -1,6 +1,6 @@
 import type { RootLayoutProps } from '~/types/rootLayout';
 import type { Metadata } from 'next/types';
-// import { ClerkProvider } from '@clerk/nextjs';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ThemeProvider } from '~/components/theme-provider';
 import Navbar from '~/components/navbar';
 import MobileNavbar from '~/components/mobile-navbar';
@@ -48,14 +48,13 @@ const RootLayout = ({ children }: { children: keyof RootLayoutProps }) => {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <ClerkProvider> */}
         <ThemeProvider defaultTheme="dark" attribute="class" enableColorScheme>
           <Navbar />
           <main>{children}</main>
           <Footer />
           <MobileNavbar />
+          <SpeedInsights />
         </ThemeProvider>
-        {/* </ClerkProvider> */}
       </body>
     </html>
   );
