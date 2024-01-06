@@ -26,7 +26,7 @@ const ThemeToggler: FC<ThemeTogglerProps> = (props) => {
     <button
       type="button"
       id="checkbox"
-      className={`cursor-pointer ${mobileResolution && 'p-2'}`}
+      className={`cursor-pointer ${mobileResolution ? 'p-2' : 'ml-1'}`}
       onClick={handleTheme}
     >
       {theme === 'light' && mounted && (

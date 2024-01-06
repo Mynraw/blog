@@ -1,7 +1,7 @@
 import type { FC } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import ThemeToggler from './theme-toggler';
+import NavigationItems from './navigation-items';
 
 const Navbar: FC = () => {
   return (
@@ -19,33 +19,7 @@ const Navbar: FC = () => {
             />
           </Link>
         </div>
-        <nav className="flex items-center gap-x-1">
-          <Link
-            className="cursor-pointer rounded-lg px-2 py-1 transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary"
-            href="/blog"
-          >
-            Blog
-          </Link>
-          <Link
-            className="cursor-pointer rounded-lg px-2 py-1 transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary"
-            href="/resume"
-          >
-            Resume
-          </Link>
-          <Link
-            className="cursor-pointer rounded-lg px-2 py-1 transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary"
-            href="/snippets"
-          >
-            Snippets
-          </Link>
-          <Link
-            className="cursor-pointer rounded-lg px-2 py-1 transition-colors ease-linear hover:bg-lakerAway hover:text-secondary dark:hover:bg-celtic dark:hover:text-primary"
-            href="/about"
-          >
-            About
-          </Link>
-          <ThemeToggler mobileResolution={false} />
-        </nav>
+        <NavigationItems />
       </div>
     </div>
   );
