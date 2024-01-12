@@ -2,7 +2,9 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { MDXRemote } from 'next-mdx-remote/rsc';
+
 import { proseOverride } from '~/data/proseOverride';
+import Pre from '~/components/pre';
 
 interface ParamProps {
   params: {
@@ -48,7 +50,7 @@ const SnippetPost = ({ params }: ParamProps) => {
     <article className={proseOverride}>
       <h1>{frontMatter.description}</h1>
 
-      <MDXRemote source={content} />
+      <MDXRemote components={{ pre: Pre }} source={content} />
     </article>
   );
 };

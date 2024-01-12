@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import type readingTime from 'reading-time'
 
 export type ReadingTime = ReturnType<typeof readingTime>;
@@ -30,3 +31,7 @@ export interface BlogFrontMatterProps {
     readingTime: ReadingTime,
     fileName: string,
 }
+
+export type PreType = {
+    children?: ReactNode;
+};
