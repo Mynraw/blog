@@ -1,0 +1,34 @@
+---
+title: Force DOM rerender
+date: '12th January 2024'
+lastUpdated: ''
+description: Rerender element when the content changes
+email: aryaacikgoz@outlook.com
+linkedin: https://www.linkedin.com/in/aryaacikgoz/
+github: https://github.com/mynraw
+twitter: https://twitter.com/aryasalted
+icon: 'react'
+---
+
+##
+
+```
+'use client';
+...
+interface PdfViewerProps {
+    triggeringNumber: number;
+    srcPath: string;
+}
+
+const EmbeddedPdfViewer: FC<PdfViewerProps> = ({triggeringNumber, srcPath}) => {
+    const [revalidateNumber, setRevalidateNumber] = useState<number>(0);
+
+    useEffect(() => {
+        setRevalidateNumber(prevVal => prevVal + 1);
+    }, [triggeringNumber])
+
+    // 'triggeringNumber' is our rerendering dependency. can be Math.random() or any other useful logic.
+
+    return <embed src={srcPath} key={revalidateNumber} type="application/pdf">
+}
+```

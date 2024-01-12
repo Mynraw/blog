@@ -26,7 +26,7 @@ const SnippetsPage: NextPage = () => {
   return (
     <section className="mx-auto mt-8 min-h-screen max-w-5xl px-3 pt-8 md:px-6 xs:mt-3 xs:px-3 xs:pt-3 3xl:max-w-[80%]">
       <Header label={snippetLabel} title={snippetTitle} />
-      <div className="grid-cols-2 py-12 lg:grid">
+      <div className="grid grid-cols-1 gap-6 py-12 lg:grid-cols-2">
         {snippets.map((snippet) => (
           <Snippet
             key={snippet.slug}
