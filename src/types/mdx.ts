@@ -35,3 +35,13 @@ export interface BlogFrontMatterProps {
 export type PreType = {
     children?: ReactNode;
 };
+
+export interface ParamProps {
+    params: {
+        frontMatter: {
+            [key: string]: string;
+        };
+        slug: string;
+        content: string;
+    };
+}
