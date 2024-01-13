@@ -1,8 +1,5 @@
 import React, { type FC } from 'react';
-
-interface EmojiProps {
-  emoji: string;
-}
+import type { EmojiProps } from '~/types/emoji';
 
 const Emoji: FC<EmojiProps> = ({ emoji }) => {
   return <i className={`${emoji} !mb-0 inline-block`} />;

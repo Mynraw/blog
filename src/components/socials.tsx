@@ -4,9 +4,7 @@ import { FaXTwitter, FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { MdOutlineMail } from 'react-icons/md';
 import { cardData } from '~/data/cardData';
 
-interface Props {}
-
-const Socials: FC<Props> = () => {
+const Socials: FC = () => {
   return (
     <div className="flex items-center gap-x-4">
       <Link href={`mailto:${cardData.email}`}>
