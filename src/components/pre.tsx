@@ -40,7 +40,7 @@ const Pre: FC<PreType> = ({ children }) => {
       {hovered && (
         <button
           onClick={handleCopy}
-          className={`absolute right-2 top-2 rounded-md border border-secondary p-1 transition-all ${copied && 'border-celtic'}`}
+          className={`absolute right-2 top-2 rounded-md border p-1 transition-all ${copied ? 'border-celtic' : 'border-secondary'}`}
           disabled={copied}
         >
           {copied ? (

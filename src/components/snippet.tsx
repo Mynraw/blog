@@ -8,7 +8,7 @@ const Snippet: FC<SnippetProps> = (props) => {
 
   return (
     <Link href={`/snippets/${slug}`} key={slug}>
-      <div className="flex items-center gap-x-6 rounded-xl border border-transparent p-4 text-primary shadow-intense shadow-primary transition-all hover:shadow-md dark:text-secondary dark:shadow-intense-dark dark:transition-all dark:hover:shadow-md dark:hover:shadow-secondary xs:p-2">
+      <div className="flex items-center gap-x-6 rounded-xl border border-transparent p-4 text-primary shadow-intense shadow-primary transition-all hover:shadow-md dark:bg-celtic dark:text-secondary dark:shadow-celtic dark:transition-all dark:hover:shadow-md dark:hover:shadow-celtic xs:p-2">
         <div className="relative h-[84px] w-[84px] xs:h-14 xs:w-14">
           <Image src={`/icons/${icon}.svg`} alt={icon} fill />
         </div>
@@ -17,7 +17,7 @@ const Snippet: FC<SnippetProps> = (props) => {
           <h3 className="overflow-ellipsis whitespace-nowrap text-xl font-bold">
             {title}
           </h3>
-          <p className="overflow-visible">{description}</p>
+          <p className="opacity-80">{description}</p>
         </div>
       </div>
     </Link>
