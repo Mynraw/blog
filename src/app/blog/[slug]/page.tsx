@@ -4,16 +4,7 @@ import matter from 'gray-matter';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { proseOverride } from '~/data/proseOverride';
 import Pre from '~/components/pre';
-
-interface ParamProps {
-  params: {
-    frontMatter: {
-      [key: string]: string;
-    };
-    slug: string;
-    content: string;
-  };
-}
+import type { ParamProps } from '~/types/mdx';
 
 export const generateStaticParams = () => {
   const blogDir = 'src/content/blog';
