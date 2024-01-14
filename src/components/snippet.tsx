@@ -8,7 +8,7 @@ const Snippet: FC<SnippetProps> = (props) => {
 
   return (
     <Link href={`/snippets/${slug}`} key={slug}>
-      <div className="flex items-center gap-x-6 rounded-xl border border-transparent p-4 text-primary shadow-intense shadow-primary transition-all hover:shadow-md dark:bg-celtic dark:text-secondary dark:shadow-celtic dark:transition-all dark:hover:shadow-md dark:hover:shadow-celtic xs:p-2">
+      <div className="flex items-center gap-x-6 rounded-xl border border-transparent p-4 text-primary shadow-intense shadow-primary transition-all hover:shadow-md dark:bg-zinc-500 dark:text-secondary dark:shadow-zinc-500 dark:transition-all dark:hover:shadow-md dark:hover:shadow-zinc-500 xs:p-2">
         <div className="xs:h-18 xs:w-18 relative h-[84px] w-[84px]">
           <Image src={`/icons/${icon}.svg`} alt={icon} fill />
         </div>
