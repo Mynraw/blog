@@ -11,10 +11,6 @@ This happened right after the boredom got struck me bad.
 This is a personel website that bootstrapped with [T3Stack](https://create.t3.gg/).
 App deployed on [Vercel](https://vercel.com/).
 
-## Assets
-
-The images in this blog are from Unsplash, gifs from GIPHY, and illustrations are from Storyset.
-
 ---
 
 Copyright (🤡) 2023 Arya Açıkgöz - Issa opensource.
